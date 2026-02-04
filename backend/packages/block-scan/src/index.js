@@ -2,12 +2,7 @@ require("dotenv").config();
 
 const { scan } = require("./scan");
 const {
-  chain: {
-    subscribeLatestHeight,
-    subscribeFinalizedHeight,
-    updateSpecs,
-    checkSpecs,
-  },
+  chain: { subscribeLatestHeight, subscribeFinalizedHeight, updateSpecs, checkSpecs },
   env: { isUseMetaDb },
 } = require("@osn/scan-common");
 const {
